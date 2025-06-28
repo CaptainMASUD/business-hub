@@ -18,6 +18,7 @@ import RegisterPage from './Components/Register/RegisterPage';
 import { persistor, store } from './Redux/Store/Store'; // Import both store and persistor
 import { PersistGate } from 'redux-persist/integration/react';
 import { Provider } from 'react-redux';
+import ServicesComponent from './Components/Services/Services';
 
 // Create browser router and configure routes
 const router = createBrowserRouter([
@@ -34,6 +35,7 @@ const router = createBrowserRouter([
       { path: 'privacy', element: <PrivacyPolicy /> },
       { path: 'login', element: <LoginPage /> },
       { path: 'register', element: <RegisterPage /> },
+      { path: 'services', element: <ServicesComponent /> },
     ],
   },
 ]);

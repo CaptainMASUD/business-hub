@@ -3,18 +3,18 @@ import React from 'react'
 import { Outlet } from 'react-router-dom'
 import Navbar from '../Navbar/Navbar'
 import Footer from '../Footer/Footer'
-import SocialMediaIcons from '../ShareIcons/ShareIcons'
+import LayoutWrapper from './layout-wrapper'
+
 
 
 function Layout() {
   return (
     <div>
-    
-        {/* <Navbar/> */}
-        {/* <SocialMediaIcons/> */}
+    <LayoutWrapper>
+        <Navbar/>
         <Outlet/>
-        {/* <Footer/> */}
-      
+        <Footer/>
+      </LayoutWrapper>
     </div>
   )
 }
