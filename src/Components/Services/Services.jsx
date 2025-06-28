@@ -22,11 +22,10 @@ import {
   Award,
   Zap,
   Target,
+  ArrowRight,
   Sparkles,
   Shield,
   Clock,
-  Phone,
-  Mail,
 } from "lucide-react"
 
 export default function ServicesComponent() {
@@ -60,7 +59,6 @@ export default function ServicesComponent() {
       description: "সম্পূর্ণ আর্থিক নিয়ন্ত্রণ ও পরিকল্পনা",
       color: "blue",
       gradient: "from-blue-500 to-cyan-500",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=300&fit=crop",
     },
     {
       icon: Truck,
@@ -68,7 +66,6 @@ export default function ServicesComponent() {
       description: "সরবরাহ শৃঙ্খল দক্ষতা বৃদ্ধি",
       color: "green",
       gradient: "from-green-500 to-emerald-500",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=300&fit=crop",
     },
     {
       icon: Users,
@@ -76,7 +73,6 @@ export default function ServicesComponent() {
       description: "গ্রাহক সম্পর্ক উন্নতি ও রক্ষণাবেক্ষণ",
       color: "purple",
       gradient: "from-purple-500 to-pink-500",
-      image: "https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=300&fit=crop",
     },
     {
       icon: UserCheck,
@@ -84,7 +80,6 @@ export default function ServicesComponent() {
       description: "কর্মী ব্যবস্থাপনা ও পেরোল সিস্টেম",
       color: "orange",
       gradient: "from-orange-500 to-red-500",
-      image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=300&fit=crop",
     },
   ]
 
@@ -105,55 +100,13 @@ export default function ServicesComponent() {
   ]
 
   const businessSectors = [
-    {
-      name: "Education ERP",
-      icon: Building2,
-      color: "blue",
-      gradient: "from-blue-500 to-indigo-500",
-      image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=300&h=200&fit=crop",
-    },
-    {
-      name: "Garments ERP",
-      icon: Factory,
-      color: "green",
-      gradient: "from-green-500 to-teal-500",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&h=200&fit=crop",
-    },
-    {
-      name: "Hospital ERP",
-      icon: UserCheck,
-      color: "red",
-      gradient: "from-red-500 to-pink-500",
-      image: "https://images.unsplash.com/photo-1576091160399-112ba8d25d1f?w=300&h=200&fit=crop",
-    },
-    {
-      name: "Retail Software",
-      icon: ShoppingCart,
-      color: "purple",
-      gradient: "from-purple-500 to-violet-500",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=300&h=200&fit=crop",
-    },
-    {
-      name: "Wholesale Manufacturing",
-      icon: Package,
-      color: "orange",
-      gradient: "from-orange-500 to-amber-500",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=300&h=200&fit=crop",
-    },
-    {
-      name: "Inventory Software",
-      icon: Archive,
-      color: "teal",
-      gradient: "from-teal-500 to-cyan-500",
-      image: "https://images.unsplash.com/photo-1553062407-98eeb64c6a62?w=300&h=200&fit=crop",
-    },
-    {
-      name: "Construction Projects",
-      icon: Building2,
-      color: "gray",
-      gradient: "from-gray-500 to-slate-500",
-      image: "https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=300&h=200&fit=crop",
-    },
+    { name: "Education ERP", icon: Building2, color: "blue", gradient: "from-blue-500 to-indigo-500" },
+    { name: "Garments ERP", icon: Factory, color: "green", gradient: "from-green-500 to-teal-500" },
+    { name: "Hospital ERP", icon: UserCheck, color: "red", gradient: "from-red-500 to-pink-500" },
+    { name: "Retail Software", icon: ShoppingCart, color: "purple", gradient: "from-purple-500 to-violet-500" },
+    { name: "Wholesale Manufacturing", icon: Package, color: "orange", gradient: "from-orange-500 to-amber-500" },
+    { name: "Inventory Software", icon: Archive, color: "teal", gradient: "from-teal-500 to-cyan-500" },
+    { name: "Construction Projects", icon: Building2, color: "gray", gradient: "from-gray-500 to-slate-500" },
   ]
 
   const detailedFeatures = [
@@ -167,7 +120,6 @@ export default function ServicesComponent() {
       ],
       icon: Calculator,
       gradient: "from-blue-500 to-indigo-500",
-      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=400&h=250&fit=crop",
     },
     {
       category: "ব্যবসায়িক বিশ্লেষণ",
@@ -179,14 +131,12 @@ export default function ServicesComponent() {
       ],
       icon: PieChart,
       gradient: "from-green-500 to-emerald-500",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop",
     },
     {
       category: "অর্ডার ব্যবস্থাপনা",
       features: ["ক্রয় ও বিক্রয় অর্ডার ব্যবস্থাপনা", "ডেবিট নোট ও ক্রেডিট নোট ব্যবস্থাপনা", "ভ্যাট ব্যবস্থাপনা", "ক্রয় ও বিক্রয় চালানপত্র"],
       icon: ClipboardList,
       gradient: "from-purple-500 to-pink-500",
-      image: "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop",
     },
     {
       category: "ইনভেন্টরি ও পেরোল",
@@ -198,7 +148,6 @@ export default function ServicesComponent() {
       ],
       icon: Package,
       gradient: "from-orange-500 to-red-500",
-      image: "https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?w=400&h=250&fit=crop",
     },
   ]
 
@@ -223,22 +172,11 @@ export default function ServicesComponent() {
           isDarkMode
             ? "bg-gradient-to-r from-gray-900 via-blue-900 to-indigo-900"
             : "bg-gradient-to-r from-indigo-900 via-blue-800 to-purple-900"
-        } text-white py-20`}
+        } text-white py-24`}
         initial={{ opacity: 0, y: -50 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
       >
-        {/* Hero Background Image */}
-        <div
-          className="absolute inset-0 opacity-20"
-          style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=1200&h=600&fit=crop')",
-            backgroundSize: "cover",
-            backgroundPosition: "center",
-          }}
-        ></div>
-
         {/* Animated Background Elements */}
         <div className="absolute inset-0 overflow-hidden">
           <div className="absolute -top-40 -right-40 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl animate-pulse"></div>
@@ -263,7 +201,7 @@ export default function ServicesComponent() {
               </motion.div>
             </div>
             <motion.h1
-              className="text-4xl md:text-6xl font-bold mb-6 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent"
+              className="text-6xl md:text-7xl font-bold mb-8 bg-gradient-to-r from-white via-blue-100 to-purple-100 bg-clip-text text-transparent"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.5 }}
@@ -271,13 +209,13 @@ export default function ServicesComponent() {
               সমন্বিত ERP ও QuickBooks সমাধান
             </motion.h1>
             <motion.p
-              className="text-lg md:text-xl text-blue-100 max-w-4xl mx-auto leading-relaxed"
+              className="text-xl md:text-2xl text-blue-100 max-w-5xl mx-auto leading-relaxed"
               initial={{ y: 30, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
               transition={{ delay: 0.7 }}
             >
               আর্থিক ব্যবস্থাপনা, সাপ্লাই চেইন ম্যানেজমেন্ট, কাস্টমার রিলেশনশিপ ম্যানেজমেন্ট, হিউম্যান রিসোর্স এবং আরও অনেক কিছুর মতো মূল
-              ব্যবসায়িক ক্রিয়াকলাপগুলিকে একটি ইআরপি সিস্টেমে সংযুক্ত করার মাধ্যমে, কোম্পানিগুলোর প্রক্রিয়াগুলিতে আরও দক্ষতা আনায়ন এবং ব্যবসার
+              ব্যবসায়িক ক্রি��়াকলাপগুলিকে একটি ইআরপি সিস্টেমে সংযুক্ত করার মাধ্যমে, কোম্পানিগুলোর প্রক্রিয়াগুলিতে আরও দক্ষতা আনায়ন এবং ব্যবসার
               ফলাফল উন্নত হয়।
             </motion.p>
           </motion.div>
@@ -317,27 +255,17 @@ export default function ServicesComponent() {
             {erpFeatures.map((feature, index) => (
               <motion.div
                 key={index}
-                className="bg-white/10 backdrop-blur-lg rounded-2xl overflow-hidden hover:bg-white/20 transition-all duration-500 border border-white/20 group"
+                className="bg-white/10 backdrop-blur-lg rounded-2xl p-8 text-center hover:bg-white/20 transition-all duration-500 border border-white/20 group"
                 variants={itemVariants}
                 whileHover={{ y: -10, scale: 1.05 }}
               >
-                <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={feature.image || "/placeholder.svg"}
-                    alt={feature.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${feature.gradient}/80`}></div>
+                <div
+                  className={`bg-gradient-to-r ${feature.gradient} w-20 h-20 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}
+                >
+                  <feature.icon className="w-10 h-10 text-white" />
                 </div>
-                <div className="p-6 text-center">
-                  <div
-                    className={`bg-gradient-to-r ${feature.gradient} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-4 shadow-lg group-hover:shadow-2xl transition-all duration-300`}
-                  >
-                    <feature.icon className="w-8 h-8 text-white" />
-                  </div>
-                  <h3 className="text-xl font-bold mb-3">{feature.title}</h3>
-                  <p className="text-blue-100 leading-relaxed">{feature.description}</p>
-                </div>
+                <h3 className="text-xl font-bold mb-4">{feature.title}</h3>
+                <p className="text-blue-100 leading-relaxed">{feature.description}</p>
               </motion.div>
             ))}
           </motion.div>
@@ -346,13 +274,13 @@ export default function ServicesComponent() {
 
       {/* QuickBooks Desktop Section */}
       <motion.div
-        className="max-w-7xl mx-auto px-6 py-20"
+        className="max-w-7xl mx-auto px-6 py-24"
         variants={containerVariants}
         initial="hidden"
         animate="visible"
       >
-        <motion.div className="text-center mb-16" variants={itemVariants}>
-          <div className="flex justify-center mb-6">
+        <motion.div className="text-center mb-20" variants={itemVariants}>
+          <div className="flex justify-center mb-8">
             <motion.div className="relative" whileHover={{ scale: 1.1 }} transition={{ duration: 0.3 }}>
               <div
                 className={`${isDarkMode ? "bg-gradient-to-br from-blue-600 to-indigo-700" : "bg-gradient-to-br from-blue-500 to-indigo-600"} p-6 rounded-2xl shadow-2xl`}
@@ -362,14 +290,14 @@ export default function ServicesComponent() {
               <div className="absolute -top-2 -right-2 w-6 h-6 bg-green-400 rounded-full animate-pulse"></div>
             </motion.div>
           </div>
-          <h2 className={`text-4xl md:text-5xl font-bold mb-6 ${isDarkMode ? "text-white" : "text-gray-900"}`}>
+          <h2 className={`text-5xl md:text-6xl font-bold mb-8 ${isDarkMode ? "text-white" : "text-gray-900"}`}>
             QuickBooks Desktop
           </h2>
           <div
-            className={`w-24 h-1 ${isDarkMode ? "bg-gradient-to-r from-blue-400 to-purple-400" : "bg-gradient-to-r from-blue-500 to-purple-500"} mx-auto mb-6 rounded-full`}
+            className={`w-24 h-1 ${isDarkMode ? "bg-gradient-to-r from-blue-400 to-purple-400" : "bg-gradient-to-r from-blue-500 to-purple-500"} mx-auto mb-8 rounded-full`}
           ></div>
           <p
-            className={`text-lg md:text-xl max-w-4xl mx-auto leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
+            className={`text-xl md:text-2xl max-w-5xl mx-auto leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-600"}`}
           >
             ব্যবসায়িক সকল হিসাব রাখার জন্য ব্যবহার করুন QuickBooks-Desktop যা একটি সমন্বিত Accounting, Inventory, Manufacturing এবং
             Payroll সফটওয়্যার। এটি পৃথিবীব্যাপী ব্যবসায়ীদের আস্থা অর্জন করে চলেছে দুই যুগেরও বেশী সময় ধরে।
@@ -377,29 +305,21 @@ export default function ServicesComponent() {
         </motion.div>
 
         {/* QuickBooks Features Grid */}
-        <motion.div className="grid lg:grid-cols-2 gap-12 mb-20" variants={itemVariants}>
+        <motion.div className="grid lg:grid-cols-2 gap-16 mb-24" variants={itemVariants}>
           <div
-            className={`${isDarkMode ? "bg-gray-800/50" : "bg-white"} rounded-3xl p-8 shadow-2xl border ${isDarkMode ? "border-gray-700" : "border-gray-100"} backdrop-blur-lg`}
+            className={`${isDarkMode ? "bg-gray-800/50" : "bg-white"} rounded-3xl p-10 shadow-2xl border ${isDarkMode ? "border-gray-700" : "border-gray-100"} backdrop-blur-lg`}
           >
-            <div className="relative mb-6">
-              <img
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=500&h=200&fit=crop"
-                alt="QuickBooks Features"
-                className="w-full h-32 object-cover rounded-2xl"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-green-500/80 to-emerald-500/80 rounded-2xl"></div>
-              <div className="absolute top-4 left-4 bg-white/20 backdrop-blur-sm p-2 rounded-lg">
-                <CheckCircle className="w-6 h-6 text-white" />
+            <h3 className={`text-3xl font-bold mb-8 flex items-center ${isDarkMode ? "text-white" : "text-gray-900"}`}>
+              <div className="bg-gradient-to-r from-green-500 to-emerald-500 p-2 rounded-lg mr-4">
+                <CheckCircle className="w-8 h-8 text-white" />
               </div>
-            </div>
-            <h3 className={`text-2xl font-bold mb-6 flex items-center ${isDarkMode ? "text-white" : "text-gray-900"}`}>
               QuickBooks Desktop এ পাচ্ছেন
             </h3>
-            <div className="space-y-3">
+            <div className="space-y-4">
               {quickbooksFeatures.map((feature, index) => (
                 <motion.div
                   key={index}
-                  className={`flex items-center p-3 rounded-xl transition-all duration-300 ${
+                  className={`flex items-center p-4 rounded-xl transition-all duration-300 ${
                     isDarkMode ? "bg-gray-700/50 hover:bg-gray-600/50" : "bg-gray-50 hover:bg-blue-50"
                   }`}
                   whileHover={{ x: 10, scale: 1.02 }}
@@ -407,72 +327,61 @@ export default function ServicesComponent() {
                   animate={{ opacity: 1, x: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-1.5 rounded-lg mr-3">
-                    <Star className="w-4 h-4 text-white" />
+                  <div className="bg-gradient-to-r from-blue-500 to-indigo-500 p-2 rounded-lg mr-4">
+                    <Star className="w-5 h-5 text-white" />
                   </div>
-                  <span className={`font-medium text-sm ${isDarkMode ? "text-gray-200" : "text-gray-700"}`}>
-                    {feature}
-                  </span>
+                  <span className={`font-medium ${isDarkMode ? "text-gray-200" : "text-gray-700"}`}>{feature}</span>
                 </motion.div>
               ))}
             </div>
           </div>
 
-          <div className="bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 rounded-3xl p-8 text-white relative overflow-hidden">
+          <div className="bg-gradient-to-br from-blue-600 via-indigo-700 to-purple-800 rounded-3xl p-10 text-white relative overflow-hidden">
             <div className="absolute top-0 right-0 w-32 h-32 bg-white/10 rounded-full -translate-y-16 translate-x-16"></div>
             <div className="absolute bottom-0 left-0 w-24 h-24 bg-white/10 rounded-full translate-y-12 -translate-x-12"></div>
 
-            <div className="relative mb-6">
-              <img
-                src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=500&h=200&fit=crop"
-                alt="Intuit Company"
-                className="w-full h-32 object-cover rounded-2xl opacity-80"
-              />
-              <div className="absolute inset-0 bg-gradient-to-r from-purple-600/60 to-pink-600/60 rounded-2xl"></div>
-            </div>
-
-            <h3 className="text-2xl font-bold mb-6 flex items-center relative z-10">
-              <Award className="w-6 h-6 mr-3" />
+            <h3 className="text-3xl font-bold mb-8 flex items-center relative z-10">
+              <Award className="w-8 h-8 mr-4" />
               বিশ্বস্ততার প্রমাণ
             </h3>
-            <div className="space-y-6 relative z-10">
+            <div className="space-y-8 relative z-10">
               <motion.div
-                className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20"
+                className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20"
+                whileHover={{ scale: 1.05 }}
+                transition={{ duration: 0.3 }}
+              >
+                <div className="flex items-center mb-6">
+                  <Globe className="w-10 h-10 text-blue-200 mr-4" />
+                  <div>
+                    <h4 className="text-2xl font-bold">Intuit Inc.</h4>
+                    <p className="text-blue-200">Mountain View, California, USA</p>
+                  </div>
+                </div>
+                <p className="text-blue-100 text-lg">১৯৮৩ সালে Scott Cook এবং Tom Proulx দ্বারা প্রতিষ্ঠিত</p>
+              </motion.div>
+
+              <motion.div
+                className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
                 <div className="flex items-center mb-4">
-                  <Globe className="w-8 h-8 text-blue-200 mr-3" />
-                  <div>
-                    <h4 className="text-xl font-bold">Intuit Inc.</h4>
-                    <p className="text-blue-200 text-sm">Mountain View, California, USA</p>
-                  </div>
+                  <Target className="w-8 h-8 text-green-300 mr-4" />
+                  <span className="text-2xl font-bold">২০+ বছরের অভিজ্ঞতা</span>
                 </div>
-                <p className="text-blue-100">১৯৮৩ সালে Scott Cook এবং Tom Proulx দ্বারা প্রতিষ্ঠিত</p>
+                <p className="text-blue-100 text-lg">পৃথিবীব্যাপী ব্যবসায়ীদের আস্থা অর্জনকারী</p>
               </motion.div>
 
               <motion.div
-                className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20"
+                className="bg-white/10 rounded-2xl p-8 backdrop-blur-sm border border-white/20"
                 whileHover={{ scale: 1.05 }}
                 transition={{ duration: 0.3 }}
               >
-                <div className="flex items-center mb-3">
-                  <Target className="w-6 h-6 text-green-300 mr-3" />
-                  <span className="text-lg font-bold">২০+ বছরের অভিজ্ঞতা</span>
+                <div className="flex items-center mb-4">
+                  <Zap className="w-8 h-8 text-yellow-300 mr-4" />
+                  <span className="text-2xl font-bold">আধুনিক ইউজার ইন্টারফেস</span>
                 </div>
-                <p className="text-blue-100">পৃথিবীব্যাপী ব্যবসায়ীদের আস্থা অর্জনকারী</p>
-              </motion.div>
-
-              <motion.div
-                className="bg-white/10 rounded-2xl p-6 backdrop-blur-sm border border-white/20"
-                whileHover={{ scale: 1.05 }}
-                transition={{ duration: 0.3 }}
-              >
-                <div className="flex items-center mb-3">
-                  <Zap className="w-6 h-6 text-yellow-300 mr-3" />
-                  <span className="text-lg font-bold">আধুনিক ইউজার ইন্টারফেস</span>
-                </div>
-                <p className="text-blue-100">ব্যবহারকারীদের জন্য সহজ ও কার্যকর</p>
+                <p className="text-blue-100 text-lg">ব্যবহারকারীদের জন্য সহজ ও কার্যকর</p>
               </motion.div>
             </div>
           </div>
@@ -481,53 +390,45 @@ export default function ServicesComponent() {
         {/* Detailed Features */}
         <motion.div variants={itemVariants}>
           <h2
-            className={`text-3xl md:text-4xl font-bold text-center mb-12 ${isDarkMode ? "text-white" : "text-gray-900"}`}
+            className={`text-4xl md:text-5xl font-bold text-center mb-16 ${isDarkMode ? "text-white" : "text-gray-900"}`}
           >
             QuickBooks এর বিস্তারিত সুবিধাসমূহ
           </h2>
-          <div className="grid md:grid-cols-2 gap-8">
+          <div className="grid md:grid-cols-2 gap-10">
             {detailedFeatures.map((category, index) => (
               <motion.div
                 key={index}
-                className={`${isDarkMode ? "bg-gray-800/50" : "bg-white"} rounded-3xl shadow-2xl border ${isDarkMode ? "border-gray-700" : "border-gray-100"} hover:shadow-3xl transition-all duration-500 backdrop-blur-lg group overflow-hidden`}
+                className={`${isDarkMode ? "bg-gray-800/50" : "bg-white"} rounded-3xl p-10 shadow-2xl border ${isDarkMode ? "border-gray-700" : "border-gray-100"} hover:shadow-3xl transition-all duration-500 backdrop-blur-lg group`}
                 whileHover={{ y: -10, scale: 1.02 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <div className="relative h-40 overflow-hidden">
-                  <img
-                    src={category.image || "/placeholder.svg"}
-                    alt={category.category}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${category.gradient}/80`}></div>
+                <div className="flex items-center mb-8">
                   <div
-                    className={`absolute top-4 left-4 bg-gradient-to-r ${category.gradient} p-3 rounded-2xl shadow-lg group-hover:shadow-2xl transition-all duration-300`}
+                    className={`bg-gradient-to-r ${category.gradient} p-4 rounded-2xl mr-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}
                   >
-                    <category.icon className="w-6 h-6 text-white" />
+                    <category.icon className="w-8 h-8 text-white" />
                   </div>
-                </div>
-                <div className="p-8">
-                  <h3 className={`text-xl font-bold mb-6 ${isDarkMode ? "text-white" : "text-gray-900"}`}>
+                  <h3 className={`text-2xl font-bold ${isDarkMode ? "text-white" : "text-gray-900"}`}>
                     {category.category}
                   </h3>
-                  <div className="space-y-3">
-                    {category.features.map((feature, featureIndex) => (
-                      <motion.div
-                        key={featureIndex}
-                        className="flex items-start"
-                        initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ delay: index * 0.1 + featureIndex * 0.05 }}
-                      >
-                        <CheckCircle className="w-5 h-5 text-green-500 mr-3 mt-0.5 flex-shrink-0" />
-                        <span className={`leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
-                          {feature}
-                        </span>
-                      </motion.div>
-                    ))}
-                  </div>
+                </div>
+                <div className="space-y-4">
+                  {category.features.map((feature, featureIndex) => (
+                    <motion.div
+                      key={featureIndex}
+                      className="flex items-start"
+                      initial={{ opacity: 0, x: -20 }}
+                      animate={{ opacity: 1, x: 0 }}
+                      transition={{ delay: index * 0.1 + featureIndex * 0.05 }}
+                    >
+                      <CheckCircle className="w-6 h-6 text-green-500 mr-4 mt-0.5 flex-shrink-0" />
+                      <span className={`text-lg leading-relaxed ${isDarkMode ? "text-gray-300" : "text-gray-700"}`}>
+                        {feature}
+                      </span>
+                    </motion.div>
+                  ))}
                 </div>
               </motion.div>
             ))}
@@ -535,78 +436,59 @@ export default function ServicesComponent() {
         </motion.div>
 
         {/* Business Sectors */}
-        <motion.div className="mt-20" variants={itemVariants}>
+        <motion.div className="mt-24" variants={itemVariants}>
           <h2
-            className={`text-3xl md:text-4xl font-bold text-center mb-12 ${isDarkMode ? "text-white" : "text-gray-900"}`}
+            className={`text-4xl md:text-5xl font-bold text-center mb-16 ${isDarkMode ? "text-white" : "text-gray-900"}`}
           >
             আমাদের সেবা পরিসর
           </h2>
-          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-6">
+          <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-8">
             {businessSectors.map((sector, index) => (
               <motion.div
                 key={index}
-                className={`${isDarkMode ? "bg-gray-800/50" : "bg-white"} rounded-2xl shadow-xl border ${isDarkMode ? "border-gray-700" : "border-gray-100"} hover:shadow-2xl transition-all duration-500 group backdrop-blur-lg overflow-hidden`}
+                className={`${isDarkMode ? "bg-gray-800/50" : "bg-white"} rounded-2xl p-8 shadow-xl border ${isDarkMode ? "border-gray-700" : "border-gray-100"} text-center hover:shadow-2xl transition-all duration-500 group backdrop-blur-lg`}
                 whileHover={{ y: -10, scale: 1.05 }}
                 initial={{ opacity: 0, y: 30 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: index * 0.1 }}
               >
-                <div className="relative h-32 overflow-hidden">
-                  <img
-                    src={sector.image || "/placeholder.svg"}
-                    alt={sector.name}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                  />
-                  <div className={`absolute inset-0 bg-gradient-to-t ${sector.gradient}/70`}></div>
-                  <div
-                    className={`absolute top-3 left-3 bg-gradient-to-r ${sector.gradient} w-12 h-12 rounded-2xl flex items-center justify-center shadow-lg group-hover:shadow-2xl transition-all duration-300`}
-                  >
-                    <sector.icon className="w-6 h-6 text-white" />
-                  </div>
+                <div
+                  className={`bg-gradient-to-r ${sector.gradient} w-16 h-16 rounded-2xl flex items-center justify-center mx-auto mb-6 shadow-lg group-hover:shadow-2xl transition-all duration-300`}
+                >
+                  <sector.icon className="w-8 h-8 text-white" />
                 </div>
-                <div className="p-4 text-center">
-                  <h3 className={`font-bold ${isDarkMode ? "text-white" : "text-gray-900"}`}>{sector.name}</h3>
-                </div>
+                <h3 className={`font-bold text-lg ${isDarkMode ? "text-white" : "text-gray-900"}`}>{sector.name}</h3>
               </motion.div>
             ))}
           </div>
         </motion.div>
 
-        {/* Contact CTA Section */}
+        {/* Call to Action */}
         <motion.div
-          className="mt-20 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 rounded-3xl p-12 text-center text-white relative overflow-hidden"
+          className="mt-24 bg-gradient-to-r from-blue-600 via-indigo-600 to-purple-600 rounded-3xl p-16 text-center text-white relative overflow-hidden"
           variants={itemVariants}
         >
-          <div className="absolute inset-0 bg-black/20"></div>
+          <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-r from-blue-600/20 to-purple-600/20 backdrop-blur-3xl"></div>
           <div className="absolute -top-20 -right-20 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute -bottom-20 -left-20 w-40 h-40 bg-white/10 rounded-full blur-3xl"></div>
 
           <div className="relative z-10">
             <motion.div initial={{ scale: 0 }} animate={{ scale: 1 }} transition={{ delay: 0.5, duration: 0.5 }}>
-              <Sparkles className="w-12 h-12 mx-auto mb-6 text-yellow-300" />
+              <Sparkles className="w-16 h-16 mx-auto mb-8 text-yellow-300" />
             </motion.div>
-            <h2 className="text-3xl md:text-4xl font-bold mb-4">আপনার ব্যবসার জন্য সঠিক সমাধান খুঁজছেন?</h2>
-            <p className="text-lg md:text-xl text-blue-100 mb-8 max-w-3xl mx-auto leading-relaxed">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6">আপনার ব্যবসার জন্য সঠিক সমাধান খুঁজছেন?</h2>
+            <p className="text-xl md:text-2xl text-blue-100 mb-10 max-w-3xl mx-auto leading-relaxed">
               আমাদের বিশেষজ্ঞ দল আপনার ব্যবসার প্রয়োজন অনুযায়ী সর্বোত্তম ERP ও QuickBooks সমাধান প্রদান করতে প্রস্তুত।
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <motion.button
-                className="bg-white text-blue-600 px-8 py-3 rounded-2xl font-bold hover:bg-gray-100 transition-all duration-300 flex items-center justify-center shadow-2xl hover:shadow-3xl"
-                whileHover={{ scale: 1.05, y: -5 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Phone className="w-5 h-5 mr-2" />
-                কল করুন: +8801712-244886
-              </motion.button>
-              <motion.button
-                className="border-2 border-white text-white px-8 py-3 rounded-2xl font-bold hover:bg-white hover:text-blue-600 transition-all duration-300 flex items-center justify-center"
-                whileHover={{ scale: 1.05, y: -5 }}
-                whileTap={{ scale: 0.95 }}
-              >
-                <Mail className="w-5 h-5 mr-2" />
-                ইমেইল পাঠান
-              </motion.button>
-            </div>
+            <motion.button
+              className="bg-white text-blue-600 px-12 py-5 rounded-2xl font-bold text-xl hover:bg-gray-100 transition-all duration-300 flex items-center mx-auto shadow-2xl hover:shadow-3xl"
+              whileHover={{ scale: 1.05, y: -5 }}
+              whileTap={{ scale: 0.95 }}
+            >
+              <Calculator className="w-6 h-6 mr-3" />
+              আজই যোগাযোগ করুন
+              <ArrowRight className="w-6 h-6 ml-3" />
+            </motion.button>
           </div>
         </motion.div>
       </motion.div>
